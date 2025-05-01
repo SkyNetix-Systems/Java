@@ -9,5 +9,4 @@ class BaseDomainsApplicationTests {
 	@Test
 	void contextLoads() {
 	}
-
 }
