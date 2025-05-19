@@ -24,7 +24,7 @@ public class FI_from_API {
         FI_from_API fiAPI = new FI_from_API();
 //        fiAPI.predicate();
         fiAPI.supplier();
-        fiAPI.consumer();
+//        fiAPI.consumer();
 //        fiAPI.function();
 //        fiAPI.unaryBinaryOperator();
     }
@@ -33,6 +33,9 @@ public class FI_from_API {
         //      boolean test(T t); 
         Predicate<String> pStr = s -> s.contains("City");
         System.out.println(pStr.test("Vatican City"));//true
+
+        Predicate<Integer> pInt = n -> n > 5;
+        System.out.println(pInt.test(10));
 
         // BiPredicate<T, U> is a functional interface i.e. one abstract method:
         //      boolean test(T t, U u); 
